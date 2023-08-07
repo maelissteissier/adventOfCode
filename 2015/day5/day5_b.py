@@ -33,8 +33,7 @@ def find_same_pair_rec(pair_found_set, pair_jumped, rest):
     elif len(rest) == 1:
         return False
     else:
-        if pair_jumped is not None:
-            pair_found_set.add(pair_jumped)
+        pair_found_set.add(pair_jumped)
         return find_same_pair_rec(pair_found_set, new_pair, rest[1:])
 
 
